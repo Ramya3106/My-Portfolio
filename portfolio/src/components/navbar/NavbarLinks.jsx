@@ -10,9 +10,17 @@ const links = [
 
 const NavbarLinks = () => {
   return (
-    <ul>
+    <ul className="flex gap-6 text-white font-bold items-center py-4">
       {links.map((link, index) => (
-        <li key={index}>{link.link}</li>
+        <li key={index} className="group">
+          <a
+            href="#"
+            className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
+          >
+            {link.link}
+          </a>
+          <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
+        </li>
       ))}
     </ul>
   );
