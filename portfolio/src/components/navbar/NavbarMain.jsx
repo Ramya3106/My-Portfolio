@@ -2,6 +2,7 @@ import React from "react";
 import NavbarLogo from "./NavbarLogo";
 import NavbarLinks from "./NavbarLinks";
 import NavbarBtn from "./NavbarBtn";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavbarMain = () => {
   return (
@@ -10,6 +11,9 @@ const NavbarMain = () => {
         <NavbarLogo />
         <NavbarLinks />
         <NavbarBtn />
+      </div>
+      <div className="flex lg:hidden sm:block p-6 bg-black items-center justify-center rounded-full border-[0.5px] border-orange">
+        <GiHamburgerMenu />
       </div>
     </nav>
   );
