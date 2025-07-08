@@ -4,7 +4,7 @@ import HeroPic from "./HeroPic";
 
 const HeroMain = () => {
   return (
-    <div>
+    <div className="pt-40 pb-16">
       <HeroText />
       <HeroPic />
     </div>
