@@ -1,4 +1,3 @@
-import "./App.css";
 import HeroMain from "./components/heroSection/HeroMain";
 import NavbarMain from "./components/navbar/NavbarMain";
 import HeroGradient from "./components/heroSection/HeroGradient";
