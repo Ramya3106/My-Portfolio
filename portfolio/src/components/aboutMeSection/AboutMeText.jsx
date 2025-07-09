@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutMeText = () => {
   return (
-    <div className="flex felx-col md:items-start sm:items-center md:text-left sm:text-center">
-      <h2 className="text-6xl text-cyan md-10">About Me</h2>
-      <p className="">
+    <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center">
+      <h2 className="text-6xl text-cyan mb-10">About Me</h2>
+      <p className="text-white">
         I’m a passionate web developer who enjoys solving real-world problems
         through clean, efficient code. With hands-on experience in real-time
         projects, I bring practical solutions to complex challenges. Beyond
