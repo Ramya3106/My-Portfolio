@@ -1,39 +1,45 @@
 import React from "react";
 import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoNodejs } from "react-icons/io5";
+import { SiMongodb } from "react-icons/si";
 import SingleSkill from "./SingleSkill";
 
 const skills = [
   {
     skill: "HTML",
-    icon: "FaHtml5",
+    icon: FaHtml5,
   },
   {
     skill: "CSS",
-    icon: "FaHtml5",
+    icon: FaCss3Alt,
   },
   {
     skill: "Javascript",
-    icon: "FaHtml5",
+    icon: IoLogoJavascript,
   },
   {
     skill: "ReactJs",
-    icon: "FaHtml5",
+    icon: FaReact,
   },
   {
     skill: "TailwindCSS",
-    icon: "FaHtml5",
+    icon: RiTailwindCssFill,
   },
   {
     skill: "NodeJs",
-    icon: "FaHtml5",
+    icon: IoLogoNodejs,
   },
   {
     skill: "ExpressJS",
-    icon: "FaHtml5",
+    icon: IoLogoJavascript,
   },
   {
     skill: "MangoDB",
-    icon: "FaHtml5",
+    icon: SiMongodb,
   },
 ];
 
@@ -42,7 +48,7 @@ const AllSkills = () => {
     <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
       {skills.map((item, index) => {
         return (
-          <SingleSkill key={index} text={item.text} imgsvg={<item.icon />} />
+          <SingleSkill key={index} text={item.skill} imgsvg={<item.icon />} />
         );
       })}
     </div>
