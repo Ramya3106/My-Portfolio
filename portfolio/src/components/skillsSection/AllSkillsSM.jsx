@@ -44,7 +44,7 @@ const skills = [
 
 const AllSkillsSM = () => {
   return (
-    <div>
+    <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12">
       {skills.map((item, index) => {
         return (
           <div key={index} className="flex flex-col items-center">
