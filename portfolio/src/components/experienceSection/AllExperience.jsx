@@ -37,11 +37,11 @@ const experiences = [
 ];
 const AllExperience = () => {
   return (
-    <div className="flex md:flex-row sm:flex-col justify-between">
+    <div className="flex md:flex-row sm:flex-col items-center justify-between">
       {experiences.map((experience, index) => {
         return (
           <>
-            <SingleExperience key={index} experience={experience} />;
+            <SingleExperience key={index} experience={experience} />
             {index < 2 ? (
               <FaArrowRight className="text-6xl text-orange lg:block sm:hidden" />
             ) : (
