@@ -1,7 +1,14 @@
 import React from "react";
 
 const ExperienceTopMiddle = () => {
-  return <div>ExperienceTopMiddle</div>;
+  return (
+    <div>
+      <img
+        src="../../public/images/experience-image.jpg"
+        alt="experience image"
+      />
+    </div>
+  );
 };
 
 export default ExperienceTopMiddle;
