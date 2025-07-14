@@ -6,7 +6,11 @@ const SingleExperience = ({ experience }) => {
       <p>{experience.job}</p>
       <p>{experience.company}</p>
       <p>{experience.date}</p>
-      <ul>{experience.responsibilities}</ul>
+      <ul>
+        {experience.responsibilities.map((resp, index) => {
+          return <li key={index}>{resp}</li>;
+        })}
+      </ul>
     </div>
   );
 };
