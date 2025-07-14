@@ -22,35 +22,35 @@ const projects = [
     year: "May2024",
     align: "right",
     image: "../../public/images/project-img12.png",
-    link: "",
+    link: "#",
   },
   {
-    name: "",
-    year: "",
-    align: "",
-    image: "",
-    link: "",
+    name: "Estate",
+    year: "Aug2024",
+    align: "left",
+    image: "../../public/images/project-img4.png",
+    link: "#",
   },
   {
-    name: "",
-    year: "",
-    align: "",
-    image: "",
-    link: "",
+    name: "Book Store",
+    year: "Jan2025",
+    align: "right",
+    image: "../../public/images/project-img2.png",
+    link: "#",
   },
   {
-    name: "",
-    year: "",
-    align: "",
-    image: "",
-    link: "",
+    name: "Netflix",
+    year: "March2025",
+    align: "left",
+    image: "../../public/images/project-img7.png",
+    link: "#",
   },
   {
-    name: "",
-    year: "",
-    align: "",
-    image: "",
-    link: "",
+    name: "Skill Mine",
+    year: "June2025",
+    align: "right",
+    image: "../../public/images/project-img3.png",
+    link: "#",
   },
 ];
 
@@ -59,7 +59,17 @@ const ProjectMain = () => {
     <div>
       <ProjectText />
       <div>
-        <SingleProject />
+        {projects.map((item, index) => {
+          return (
+            <SingleProject
+              key={index}
+              name={item.name}
+              year={item.year}
+              align={item.align}
+              image={item.image}
+            />
+          );
+        })}
       </div>
     </div>
   );
