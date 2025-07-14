@@ -1,4 +1,6 @@
 import React from "react";
+import SingleExperience from "./SingleExperience";
+import { FaArrowRight } from "react-icons/fa";
 
 const experiences = [
   {
@@ -33,7 +35,18 @@ const experiences = [
   },
 ];
 const AllExperience = () => {
-  return <div>AllExperience</div>;
+  return (
+    <div>
+      {experiences.map((experience, index) => {
+        return (
+          <>
+            <SingleExperience key={index} experience={experience} />;
+            {index < 2 ? <FaArrowRight /> : ""}
+          </>
+        );
+      })}
+    </div>
+  );
 };
 
 export default AllExperience;
