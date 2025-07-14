@@ -18,9 +18,9 @@ const experiences = [
     company: "System Tron",
     date: 2022,
     responsibilities: [
-      "Participating in large scale application",
-      "Working on the performance of web applications",
-      "Generating new ideas for better user experience",
+      "Gained hands-on experience building responsive and dynamic web applications",
+      "Improved my front-end skills using HTML, CSS, JavaScript, and React",
+      "Collaborated with a team to develop real-time project features and fix bugs",
     ],
   },
   {
@@ -28,9 +28,9 @@ const experiences = [
     company: "Oasis Infobyte",
     date: 2022,
     responsibilities: [
-      "Participating in large scale application",
-      "Working on the performance of web applications",
-      "Generating new ideas for better user experience",
+      "Enhanced my web development skills by working on real-world mini projects",
+      "Learned to build user-friendly interfaces using React js",
+      "Gained practical experience in designing and deploying responsive websites",
     ],
   },
 ];
