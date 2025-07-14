@@ -6,17 +6,18 @@ const experiences = [
   {
     internship: "Front-End Developer",
     company: "Griffendor",
-    date: 2022,
+    date: 2025,
     responsibilities: [
       "Participating in large scale application",
       "Working on the performance of web applications",
+      "Collaborated with a team to develop real-time project features and fix bugs",
       "Generating new ideas for better user experience",
     ],
   },
   {
     internship: "Front-End Developer",
     company: "System Tron",
-    date: 2022,
+    date: 2025,
     responsibilities: [
       "Gained hands-on experience building responsive and dynamic web applications",
       "Improved my front-end skills using HTML, CSS, JavaScript, and React",
@@ -26,7 +27,7 @@ const experiences = [
   {
     internship: "Front-End Developer",
     company: "Oasis Infobyte",
-    date: 2022,
+    date: 2025,
     responsibilities: [
       "Enhanced my web development skills by working on real-world mini projects",
       "Learned to build user-friendly interfaces using React js",
@@ -36,7 +37,7 @@ const experiences = [
 ];
 const AllExperience = () => {
   return (
-    <div>
+    <div className="flex md:flex-row sm:flex-col justify-between">
       {experiences.map((experience, index) => {
         return (
           <>
