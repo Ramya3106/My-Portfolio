@@ -10,7 +10,13 @@ const SingleProject = ({ name, year, align, image, link }) => {
     >
       <div>
         <h2 className="md:text-3xl sm:text-2xl text-orange">{name}</h2>
-        <h2>{year}</h2>
+        <h2
+          className={`text-xl font-thin text-white font-special sm:text-center ${
+            align === "left" ? "md:text-right" : "md:text-left"
+          }`}
+        >
+          {year}
+        </h2>
         <a href={link}>
           view <BiSolidRightTopArrowCircle />
         </a>
