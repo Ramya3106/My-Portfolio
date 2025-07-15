@@ -1,11 +1,15 @@
 import React from "react";
+import SingleContactSocial from "./SingleContactSocial";
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
-const ContactSocial = ({ Icon, link }) => {
+const ContactSocial = () => {
   return (
-    <div className="text-2xl h-12 w-12 border border-orange text-orange rounded-full p-3 flex items-center justify-center">
-      <a href={link} className="cursor-pointer">
-        <Icon />
-      </a>
+    <div className="flex gap-4 my-8">
+      <SingleContactSocial link="#" Icon={FiGithub} />
+      <SingleContactSocial link="#" Icon={FaLinkedinIn} />
+      <SingleContactSocial link="#" Icon={FaTwitter} />
     </div>
   );
 };
