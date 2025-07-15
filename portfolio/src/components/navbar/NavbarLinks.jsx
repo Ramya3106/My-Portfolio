@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const links = [
   { link: "About Me", section: "about" },
@@ -9,29 +10,25 @@ const links = [
 ];
 
 const NavbarLinks = () => {
-  const handleScroll = (section) => {
-    const el = document.getElementById(section);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   return (
     <ul className="flex gap-6 text-white font-bold items-center lg:flex-row sm:flex-col lg:relative sm:absolute sm:top-[120%] left-[50%] -translate-x-[50%] lg:text-xl sm:text-xl sm:bg-cyan/30 backdrop-blur-lg lg:bg-black sm:w-full py-4">
-      {links.map((link, index) => (
-        <li key={index} className="group">
-          <a
-            href="#"
-            className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll(link.section);
-            }}
-          >
-            {link.link}
-          </a>
-          <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
-        </li>
-      ))}
+      {links.map((link, index) => {
+        return (
+          <li key={index} className="group">
+            <Link
+              to={link.section}
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-130}
+              className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
+            >
+              {link.link}
+            </Link>
+            <div className="mx-auto bg-cyan w-0 group-hover:w-full h-[1px] transition-all duration-500"></div>
+          </li>
+        );
+      })}
     </ul>
   );
 };
