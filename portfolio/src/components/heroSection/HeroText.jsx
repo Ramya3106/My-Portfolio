@@ -13,6 +13,13 @@ const HeroText = () => {
         Passionate full stack developer <br />
         with a love for clean code, clever design, and continuous learning.
       </p>
+      <a
+        href="../../public/images/ramya-resume.pdf"
+        download
+        className="mt-4 inline-block px-6 py-3 bg-orange text-white font-bold rounded-lg shadow-md hover:bg-orange-600 transition-colors duration-200"
+      >
+        Download Resume
+      </a>
     </div>
   );
 };
