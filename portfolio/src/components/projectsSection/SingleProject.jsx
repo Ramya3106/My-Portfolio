@@ -7,11 +7,14 @@ const SingleProject = ({ name, year, align, image, link }) => {
       <div>
         <h2>{name}</h2>
         <h2>{year}</h2>
-        <a>
+        <a href={link}>
           view <BiSolidRightTopArrowCircle />
         </a>
       </div>
-      <div></div>
+      <div>
+        <div></div>
+        <img src={image} alt="Project Image" />
+      </div>
     </div>
   );
 };

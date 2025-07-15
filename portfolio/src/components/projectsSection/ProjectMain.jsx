@@ -7,7 +7,7 @@ const projects = [
     name: "Travel",
     year: "Nov2023",
     align: "right",
-    image: "../../publicc/images/project-img6.png",
+    image: "../../public/images/project-img6.png",
     link: "#",
   },
   {
