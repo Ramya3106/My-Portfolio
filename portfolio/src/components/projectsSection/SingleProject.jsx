@@ -1,7 +1,7 @@
 import React from "react";
 import { BiSolidRightTopArrowCircle } from "react-icons/bi";
 
-const SingleProject = ({ name, year, align, image, link }) => {
+const SingleProject = ({ name, year, align, image, githubLink }) => {
   return (
     <div
       className={`flex w-full sm:flex-col-reverse items-center gap-8 ${
@@ -17,18 +17,24 @@ const SingleProject = ({ name, year, align, image, link }) => {
         >
           {year}
         </h2>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-self-center ${
+        <div
+          className={`text-lg flex gap-2 items-center text-cyan sm:justify-self-center ${
             align === "left"
               ? "md:justify-self-center"
               : "md:justify-self-start"
           }`}
         >
-          view <span>↗</span>
-        </a>
+          <span>view</span>
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-cyan text-cyan hover:bg-orange hover:text-white transition-all duration-500 cursor-pointer"
+            title="View on GitHub"
+          >
+            <BiSolidRightTopArrowCircle size={22} />
+          </a>
+        </div>
       </div>
       <div className="max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 relative border border-white">
         <div className="w-full h-full bg-cyan opacity-50 absolute top-0 left-0 hover:opacity-0 transition-all duration-500 md:block sm:hidden"></div>
