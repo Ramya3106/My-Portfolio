@@ -9,6 +9,12 @@ const links = [
 ];
 
 const NavbarLinks = () => {
+  const handleScroll = (section) => {
+    const el = document.getElementById(section);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <ul className="flex gap-6 text-white font-bold items-center lg:flex-row sm:flex-col lg:relative sm:absolute sm:top-[120%] left-[50%] -translate-x-[50%] lg:text-xl sm:text-xl sm:bg-cyan/30 backdrop-blur-lg lg:bg-black sm:w-full py-4">
       {links.map((link, index) => (
@@ -16,6 +22,10 @@ const NavbarLinks = () => {
           <a
             href="#"
             className="cursor-pointer text-white hover:text-cyan transition-all duration-500"
+            onClick={(e) => {
+              e.preventDefault();
+              handleScroll(link.section);
+            }}
           >
             {link.link}
           </a>

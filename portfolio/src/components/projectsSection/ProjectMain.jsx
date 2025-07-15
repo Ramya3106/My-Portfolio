@@ -8,49 +8,49 @@ const projects = [
     year: "Nov2023",
     align: "right",
     image: "../../public/images/project-img6.png",
-    link: "#",
+    link: "https://github.com/Ramya3106/Travel-and-Tour-website",
   },
   {
     name: "Ice Parlour",
     year: "jan2024",
     align: "left",
     image: "../../public/images/project-img10.png",
-    link: "#",
+    link: "https://github.com/Ramya3106/Ice-cream-parlour-website",
   },
   {
     name: "Coffee Shop",
     year: "May2024",
     align: "right",
     image: "../../public/images/project-img12.png",
-    link: "#",
+    link: "https://github.com/Ramya3106/Coffee-shop-website",
   },
   {
     name: "Estate",
     year: "Aug2024",
     align: "left",
     image: "../../public/images/project-img4.png",
-    link: "#",
+    link: "https://github.com/Ramya3106/Real-Estate-Website",
   },
   {
     name: "Book Store",
     year: "Jan2025",
     align: "right",
     image: "../../public/images/project-img2.png",
-    link: "#",
+    link: "https://github.com/Ramya3106/Book-Store-Website",
   },
   {
     name: "Netflix",
     year: "March2025",
     align: "left",
     image: "../../public/images/project-img7.png",
-    link: "#",
+    link: "https://github.com/Ramya3106/Netflix-clone-Website",
   },
   {
     name: "Skill Mine",
     year: "June2025",
     align: "right",
     image: "../../public/images/project-img3.png",
-    link: "#",
+    link: "https://github.com/Ramya3106/Multipage-Learning-Management-System-Website",
   },
 ];
 
@@ -67,6 +67,7 @@ const ProjectMain = () => {
               year={item.year}
               align={item.align}
               image={item.image}
+              link={item.link}
             />
           );
         })}
