@@ -17,7 +17,14 @@ const SingleProject = ({ name, year, align, image, link }) => {
         >
           {year}
         </h2>
-        <a href={link}>
+        <a
+          href={link}
+          className={`text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-self-center ${
+            align === "left"
+              ? "md:justify-self-center"
+              : "md:justify-self-start"
+          }`}
+        >
           view <BiSolidRightTopArrowCircle />
         </a>
       </div>
