@@ -17,7 +17,10 @@ function App() {
       <NavbarMain />
       <HeroMain />
       <HeroGradient />
-      <SubHeroSection />
+      {/* Only show SubHeroSection on large screens here */}
+      <div className="hidden lg:block">
+        <SubHeroSection />
+      </div>
       <AboutMeMain />
       <SkillsMain />
       <SubSkills />
