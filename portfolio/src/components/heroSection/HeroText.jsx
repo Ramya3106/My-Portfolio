@@ -38,7 +38,7 @@ const HeroText = () => {
       <a
         href="../../public/images/ramya-resume.pdf"
         download
-        className="mx-auto lg:mx-0 lg:self-start rounded-full border border-cyan text-white font-bold text-xl hover:bg-darkCyan bg-cyan transition-all duration-500 px-6 py-2 flex items-center"
+        className="mx-auto md:mx-0 md:self-start lg:mx-0 lg:self-start rounded-full border border-cyan text-white font-bold text-xl hover:bg-darkCyan bg-cyan transition-all duration-500 px-6 py-2 flex items-center"
       >
         Download Resume
         <BiDownArrowAlt className="ml-2 text-2xl" />
