@@ -7,6 +7,7 @@ const ProjectText = () => {
       <p className="text-lg text-center text-white">
         I have worked on a variety of web development projects, ranging from
         responsive websites for responsive websites for small businesses to
+        <br />
         full-stack applications and complex front-end and back-end interfaces
       </p>
     </div>
