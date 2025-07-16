@@ -5,7 +5,7 @@ import SubHeroSection from "./SubHeroSection";
 
 const HeroMain = () => {
   return (
-    <div className="pt-40 pb-16">
+    <div id="home" className="pt-40 pb-16">
       <div className="flex md:flex-row sm:flex-col max-w-[1200px] mx-auto justify-between items-center relative px-4">
         <HeroText />
         <div className="flex flex-col items-center w-full md:w-auto">
