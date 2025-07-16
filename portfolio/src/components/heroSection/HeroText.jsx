@@ -2,6 +2,7 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import { BiDownArrowAlt } from "react-icons/bi";
 
 const HeroText = () => {
   return (
@@ -37,9 +38,10 @@ const HeroText = () => {
       <a
         href="../../public/images/ramya-resume.pdf"
         download
-        className="mt-4 inline-block px-6 py-3 bg-orange text-white font-bold rounded-lg shadow-md hover:bg-orange-600 transition-colors duration-200"
+        className="mx-auto lg:mx-0 lg:self-start rounded-full border border-cyan text-white font-bold text-xl hover:bg-darkCyan bg-cyan transition-all duration-500 px-6 py-2 flex items-center"
       >
         Download Resume
+        <BiDownArrowAlt className="ml-2 text-2xl" />
       </a>
     </div>
   );
