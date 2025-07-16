@@ -1,3 +1,4 @@
+import { useState } from "react";
 import HeroMain from "./components/heroSection/HeroMain";
 import NavbarMain from "./components/navbar/NavbarMain";
 import HeroGradient from "./components/heroSection/HeroGradient";
@@ -12,21 +13,29 @@ import ContactMain from "./components/contactSection/ContactMain";
 import FooterMain from "./components/footer/FooterMain";
 
 function App() {
+  const [currentSection, setCurrentSection] = useState("home");
   return (
     <main className="font-body">
-      <NavbarMain />
-      <HeroMain />
-      <HeroGradient />
-      {/* Only show SubHeroSection on large screens here */}
-      <div className="hidden lg:block">
-        <SubHeroSection />
-      </div>
-      <AboutMeMain />
-      <SkillsMain />
-      <SubSkills />
-      <ExperienceMain />
-      <ProjectMain />
-      <ContactMain />
+      <NavbarMain setCurrentSection={setCurrentSection} />
+      {currentSection === "home" && (
+        <>
+          <HeroMain />
+          <HeroGradient />
+          <div className="hidden lg:block">
+            <SubHeroSection />
+          </div>
+        </>
+      )}
+      {currentSection === "about" && <AboutMeMain />}
+      {currentSection === "skills" && (
+        <>
+          <SkillsMain />
+          <SubSkills />
+        </>
+      )}
+      {currentSection === "experience" && <ExperienceMain />}
+      {currentSection === "projects" && <ProjectMain />}
+      {currentSection === "contact" && <ContactMain />}
       <FooterMain />
       <HelperSection />
     </main>

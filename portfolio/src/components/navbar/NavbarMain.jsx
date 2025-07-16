@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
 
-const NavbarMain = () => {
+const NavbarMain = ({ setCurrentSection }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -16,7 +16,10 @@ const NavbarMain = () => {
       <div className="flex justify-between w-full max-w-[1200px] mx-auto bg-black items-center p-6 rounded-full border-[0.5px] border-orange">
         <NavbarLogo />
         <div className={`${menuOpen ? "sm:block" : "sm:hidden"} lg:block`}>
-          <NavbarLinks setMenuOpen={setMenuOpen} />
+          <NavbarLinks
+            setMenuOpen={setMenuOpen}
+            setCurrentSection={setCurrentSection}
+          />
         </div>
         <NavbarBtn />
       </div>
