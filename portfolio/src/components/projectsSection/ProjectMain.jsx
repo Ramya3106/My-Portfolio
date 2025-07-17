@@ -60,7 +60,7 @@ const projects = [
 
 const ProjectMain = () => {
   return (
-    <div id="projects" className="max-w-[1200px]mx-auto px-4">
+    <div id="projects" className="max-w-[1200px]mx-auto px-4 py-10">
       <motion.div
         variants={fadeIn("up", 0.2)}
         initial="hidden"
