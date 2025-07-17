@@ -15,7 +15,7 @@ import FooterMain from "./components/footer/FooterMain";
 function App() {
   const [currentSection, setCurrentSection] = useState("home");
   return (
-    <main className="font-body">
+    <main className="font-body pt-2">
       <NavbarMain setCurrentSection={setCurrentSection} />
       {currentSection === "home" && (
         <>
