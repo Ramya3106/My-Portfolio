@@ -43,8 +43,8 @@ const AllExperience = () => {
     <div className="flex md:flex-row sm:flex-col items-center justify-between">
       {experiences.map((experience, index) => {
         return (
-          <>
-            <SingleExperience key={index} experience={experience} />
+          <React.Fragment key={index}>
+            <SingleExperience experience={experience} />
             {index < 2 ? (
               <motion.div
                 variants={fadeIn("right", 0.2)}
@@ -57,7 +57,7 @@ const AllExperience = () => {
             ) : (
               ""
             )}
-          </>
+          </React.Fragment>
         );
       })}
     </div>
