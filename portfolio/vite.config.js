@@ -4,6 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/",
   server: {
     host: "0.0.0.0",
     port: process.env.PORT || 3000,
@@ -11,5 +12,10 @@ export default defineConfig({
   preview: {
     host: "0.0.0.0",
     port: process.env.PORT || 3000,
+  },
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    sourcemap: false,
   },
 });
