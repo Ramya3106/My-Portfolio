@@ -1,7 +1,0 @@
-node_modules
-.git
-.env
-.env.local
-README.md
-DEPLOYMENT.md
-VERCEL_DEPLOYMENT.md 

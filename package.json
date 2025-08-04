@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "motion": "^12.23.6",
-    "react-scroll": "^1.9.3"
-  }
-}
