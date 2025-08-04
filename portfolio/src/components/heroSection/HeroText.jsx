@@ -36,7 +36,7 @@ const HeroText = () => {
         with a love for clean code, clever design, and continuous learning.
       </motion.p>
       <a
-        href="../../public/images/ramya-resume.pdf"
+        href="/images/ramya-resume.pdf"
         download
         className="mx-auto md:mx-0 md:self-start lg:mx-0 lg:self-start rounded-full border border-cyan text-white font-bold text-xl hover:bg-darkCyan bg-cyan transition-all duration-500 px-6 py-2 flex items-center"
       >
